@@ -17,10 +17,11 @@ export class SPService {
     let  _FinalDate: string;
     try {
       _results = null;
-      _today = '2000-' + moment().format('MM-DD');
+      _today = '2020-' + moment().format('MM-DD');
       _month = moment().format('MM');
       _day = parseInt(moment().format('DD'));
       _filter = "fields/Birthday ge '" + _today + "'";
+
       // If we are in Dezember we have to look if there are birthday in January
       // we have to build a condition to select birthday in January based on number of upcommingDays
       // we can not use the year for teste , the year is always 2000.
@@ -40,8 +41,8 @@ export class SPService {
       _results = await this.graphClient.api(`sites/root/lists('${this.birthdayListTitle}')/items?orderby=Fields/Birthday`)
         .version('v1.0')
         .expand('fields')
-        .top(upcommingDays)
-        .filter(_filter)
+        .top(upcommingDays).filter(_filter)
+        .header('Prefer','allowthrottleablequeries')
         .get();
 
         return _results.value;

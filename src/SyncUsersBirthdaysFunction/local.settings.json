@@ -1,10 +1,10 @@
 {
   "IsEncrypted": false,
   "Values": {
-    "GraphClientId": "",
-    "GraphClientSecret": "",
-    "TenantId": "",
-    "TenantUrl": "https://contoso.sharepoint.com",
+    "GraphClientId": "4134bd16-dfe5-4413-98d9-1ddf471f3aca",
+    "GraphClientSecret": "0Xjd4-dA~UcOkwLJ2EgxW.m_e5V25QDjNY",
+    "TenantId": "6e30b336-f07c-4b34-8b69-7b46a4e05807",
+    "TenantUrl": "https://tervacorp.sharepoint.com",
     "BirthdayListTitle": "Birthdays"
   }
 }
