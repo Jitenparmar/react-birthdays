@@ -115,7 +115,6 @@ export class HappyBirthdayCard extends React.Component<IHappyBirthdayCardProps, 
         <div className={styles.documentCardWrapper}>
           <div className={styles.documentCard}>
             <Image
-
               imageFit={ImageFit.cover}
               src={imageTemplate[this.props.imageTemplate].imageUrl}
               width={IMG_WIDTH}

@@ -267,7 +267,7 @@ async function deleteUser(user) {
 // this method ensures that the birthdays lists exists, or if it doesn't exist create it
 
 async function ensureBirthdaysList() {
-
+    debugger;
     let _web = new Web(tenantUrl);
     let result = false;
 
